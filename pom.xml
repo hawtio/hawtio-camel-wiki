@@ -139,6 +139,17 @@
       </snapshots>
     </repository>
     <repository>
+      <id>fs-jboss-snapshots</id>
+      <name>Fuse JBoss Nexus Snapshots</name>
+      <url>https://repository.jboss.org/nexus/content/repositories/fs-snapshots/</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
       <id>ea.jboss.org</id>
       <name>JBoss Early Access Repository</name>
       <url>https://repository.jboss.org/nexus/content/groups/ea</url>
