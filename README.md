@@ -13,6 +13,6 @@ Then just create camel routes; edit them visually in hawtio. You can then use th
 
 ### How it works
 
-On startup the [hawtio configuration](https://github.com/hawtio/hawtio/blob/master/docs/Configuration.md) is read from [blueprint.properties](https://github.com/hawtio/hawtio-camel-wiki/blob/master/src/main/resources/blueprint.properties) which specifies which git repo is cloned on startup (which is [this one by default](https://github.com/hawtio/hawtio-camel-wiki-config).
+On startup the [hawtio configuration](https://github.com/hawtio/hawtio/blob/master/docs/Configuration.md) is read from [blueprint.properties](https://github.com/hawtio/hawtio-camel-wiki/blob/master/src/main/resources/blueprint.properties) which specifies which git repo is cloned on startup - which is [this one by default](https://github.com/hawtio/hawtio-camel-wiki-config).
 
-The configuration is stored in **~/.hawtioCamelWiki/config** (you can edit this by hand if you prefer too - and push/pull as you see fit).
+The configuration is stored in **~/.hawtioCamelWiki/config** (you can edit these files using any tool outside of hawtio if you prefer too - and push/pull as you see fit).
