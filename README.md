@@ -21,7 +21,7 @@ To get started, if you have [Maven](http://maven.apache.org/) and [git](http://g
     cd hawtio-camel-wiki
     mvn jetty:run
 
-Then open [http://localhost:8080/](http://localhost:8080/) and you should be all set!
+Then open [http://localhost:8000/](http://localhost:8080/) and you should be all set!
 
 The following tabs may be useful:
 
