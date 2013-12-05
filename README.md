@@ -38,6 +38,41 @@ The git repository is cloned to **~/.hawtioCamelWiki/config** if you wish to pus
 All changes via the HawtioCamelWiki are versioned in the git repository (try the Actions -> History option in the Wiki view on the top right).
 
 
+## Upgrading to JBoss Fuse
+
+So in many ways, HawtioCamelWiki is a little bit like a cut down stand alone simpler version of [JBoss Fuse](http://www.jboss.org/products/fuse)
+
+Fuse offers the following advantages:
+
+* supports a number of JVMs working as a logical cluster with failover and load balancing; on bare metal (any computer with a JVM), on the Open Hybrid Cloud (via [OpenShift Online](https://www.openshift.com/products/online) for the public cloud or [OpenShift Enterprise](https://www.openshift.com/products/enterprise) for on premise, or a combination of both) or any IaaS like EC2 via [Apache jclouds](http://jclouds.apache.org/).
+* makes it [easy to create topologies](http://macstrac.blogspot.co.uk/2013/10/a-sneak-peek-at-whats-coming-in-jboss.html) (like master/slave, replicated, N+1) of federated message brokers
+* makes it easy to configure and manage your entire cluster
+* supports [different profiles](http://jboss-fuse.viewdocs.io/fuse/profiles) of container; so rather than just having one set of camel integration flows that run in a JVM you can federate, partition and do rolling upgrades of them.
+
+To get a HawtioCamelWiki like experience with Fuse [try watching this demo](http://vimeo.com/80625940).
+
+Or try these instructions:
+
+* grab a recent [distro of fuse-fabric](https://repository.jboss.org/nexus/content/repositories/ea/org/fusesource/fabric/fuse-fabric/) and unpack it
+* run **bin/fusefabric**
+* once its started up type:
+
+```
+fabric:create --new-user admin --new-user-password admin
+```
+
+* then wait a minute or so, typing this command should say 'success'
+
+```
+container-list
+```
+
+* now open [http://localhost:8181/](http://localhost:8181/) and in the Containers view go to the [examples/camel/profile profile page](http://localhost:8181/hawtio/index.html#/wiki/branch/1.0/view/fabric/profiles/example/camel/profile.profile) and create a new container (the one on the right).
+
+You now have a JVM running any camel routes in [this profile](http://localhost:8181/hawtio/index.html#/wiki/branch/1.0/view/fabric/profiles/example/camel/profile.profile). Create any camel routes and they will update automatically or you can use [versions to do rolling upgrades](http://jboss-fuse.viewdocs.io/fuse/rollingUpgrade) as shown in the [demo](http://vimeo.com/80625940).
+
+You can then copy this profile and run different groups of containers running different routes as you see fit.
+
 ### Running on OpenShift
 
 Every developer has 3 free machines to play with on [OpenShift](http://openshift.com/) so if you want to try this out there try this:
