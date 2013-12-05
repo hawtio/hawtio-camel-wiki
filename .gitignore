@@ -8,3 +8,4 @@ overlays
 target
 *.iml
 *.log
+activemq-data
