@@ -88,3 +88,6 @@ Read  the OpenShift Getting Started guide and install the **rhc** command-line t
 You should then be able to try this on the command line:
 
     rhc app create mycamelwiki jbossews-2.0 --from-code=http://github.com/hawtio/hawtio-camel-wiki.git
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hawtio/hawtio-camel-wiki/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
