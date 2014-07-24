@@ -11,9 +11,9 @@
   <description>hawtio :: Camel Wiki</description>
 
   <properties>
-    <activemq-version>5.9.1</activemq-version>
-    <camel-version>2.13.1</camel-version>
-    <hawtio-version>1.4.1</hawtio-version>
+    <activemq-version>5.10.0</activemq-version>
+    <camel-version>2.13.2</camel-version>
+    <hawtio-version>1.4.11</hawtio-version>
     <xbean-version>3.16</xbean-version>
     <context>/</context>
   </properties>
