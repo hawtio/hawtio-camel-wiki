@@ -13,7 +13,7 @@
   <properties>
     <activemq-version>5.10.0</activemq-version>
     <camel-version>2.13.2</camel-version>
-    <hawtio-version>1.4.11</hawtio-version>
+    <hawtio-version>1.4.19</hawtio-version>
     <xbean-version>3.16</xbean-version>
     <context>/</context>
   </properties>
