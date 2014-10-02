@@ -9,3 +9,5 @@ target
 *.iml
 *.log
 activemq-data
+/.classpath
+/.project
